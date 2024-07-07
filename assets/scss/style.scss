@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    // background-color: rgb(244, 244, 244) !important;
+    font-family: "Poppins", sans-serif !important;
+}
+body::after {
+    content: "";
+    background-image: linear-gradient(rgba(244, 244, 244, .85),rgba(244, 244, 244, .85)), url('../img/bg.jpg');
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+}
+
+main{
+    .app-layout{
+        header.title{
+            margin: 0 0 2px;
+            padding: 10px 0;
+            text-align: center;
+            background: #fff;
+            h5{
+                margin: 0;
+                color: steelblue;
+                span{
+                    color: coral;
+                }
+            }
+        }
+        section{
+            background: #fff;
+            .container{
+                padding: 0 15px;
+            }
+            .profil{
+                padding: 20px 0;
+                .card{
+                    padding: 10px 20px;
+                    background: url('../img/bg-card.webp');
+                    background-position: center;
+                    background-size: cover;
+                    .img-fluid{
+                        width: 25%;
+                        aspect-ratio: 1 / 1;
+                        object-fit: cover; //menyesuaikan gambar dengan ratio 
+                        background-color: #db1514;
+                    }
+                    .card-body{
+                        padding: 0 0 0 16px;
+                        p{
+                            margin: 10px 0;
+                            font-size: 16px;
+                        }
+                        a{
+                            padding: 6px 20px;
+                            font-size: 13px;
+                        }
+                        .btn{
+                            margin: 0 0 10px;
+                            color: steelblue;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .background{
+            section{
+                padding: 10px 0;
+                .card{
+                    .card-header{
+                        background: rgb(237, 245, 253);
+                        p{
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                    .card-body{
+                        p{
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                        .type,
+                        .date{
+                            font-weight: normal;
+                            font-size: 11px;
+                            color: grey;
+                        }
+                        .subtitle{
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                        .desc{
+                            margin: 5px 0;
+                        }
+                    }
+                }
+                .education{
+                    .organization{
+                        margin: 15px 0;
+                    }
+                }
+                .experience,
+                .certificate{
+                    .work,
+                    .letter{
+                        margin-bottom: 20px;
+                    }
+                }
+                .skill{
+                    .rounded-pill{
+                        margin: 5px;
+                        padding: 5px 10px;
+                        background-color: #f3f5f7;
+                    }
+                }
+                .social-media{
+                    .card-body{
+                        a{
+                            margin: 5px;
+                            font-size: 12px;
+                            text-decoration: none;
+                            img{
+                                width: 25%;
+                            }
+                            span{
+                                color: black;
+                                margin-left: 10px;
+                                font-weight: 600;
+                            }
+                            p{
+                                color: black;
+                                margin: 5px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            margin: 2px 0 0;
+            padding: 10px 0;
+            text-align: center;
+            background: #fff;
+            p{
+                margin: 0;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+// Responsive Breakpoint
+@media (max-width: 576px) {
+    main{
+        .app-layout{
+            section{
+                .profil{
+                    .card{
+                        .img-fluid{
+                            height: 50%
+                        }
+                        .card-body{
+                            p,a{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};

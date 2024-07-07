@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif !important;
+}
+
+body::after {
+  content: "";
+  background-image: linear-gradient(rgba(244, 244, 244, 0.85), rgba(244, 244, 244, 0.85)), url("../img/bg.jpg");
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+main .app-layout header.title {
+  margin: 0 0 2px;
+  padding: 10px 0;
+  text-align: center;
+  background: #fff;
+}
+main .app-layout header.title h5 {
+  margin: 0;
+  color: steelblue;
+}
+main .app-layout header.title h5 span {
+  color: coral;
+}
+main .app-layout section {
+  background: #fff;
+}
+main .app-layout section .container {
+  padding: 0 15px;
+}
+main .app-layout section .profil {
+  padding: 20px 0;
+}
+main .app-layout section .profil .card {
+  padding: 10px 20px;
+  background: url("../img/bg-card.webp");
+  background-position: center;
+  background-size: cover;
+}
+main .app-layout section .profil .card .img-fluid {
+  width: 25%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #db1514;
+}
+main .app-layout section .profil .card .card-body {
+  padding: 0 0 0 16px;
+}
+main .app-layout section .profil .card .card-body p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+main .app-layout section .profil .card .card-body a {
+  padding: 6px 20px;
+  font-size: 13px;
+}
+main .app-layout section .profil .card .card-body .btn {
+  margin: 0 0 10px;
+  color: steelblue;
+  background-color: #fff;
+}
+main .app-layout .background section {
+  padding: 10px 0;
+}
+main .app-layout .background section .card .card-header {
+  background: rgb(237, 245, 253);
+}
+main .app-layout .background section .card .card-header p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+main .app-layout .background section .card .card-body p {
+  margin: 0;
+  font-size: 12px;
+}
+main .app-layout .background section .card .card-body .type,
+main .app-layout .background section .card .card-body .date {
+  font-weight: normal;
+  font-size: 11px;
+  color: grey;
+}
+main .app-layout .background section .card .card-body .subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+main .app-layout .background section .card .card-body .desc {
+  margin: 5px 0;
+}
+main .app-layout .background section .education .organization {
+  margin: 15px 0;
+}
+main .app-layout .background section .experience .work,
+main .app-layout .background section .experience .letter,
+main .app-layout .background section .certificate .work,
+main .app-layout .background section .certificate .letter {
+  margin-bottom: 20px;
+}
+main .app-layout .background section .skill .rounded-pill {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #f3f5f7;
+}
+main .app-layout .background section .social-media .card-body a {
+  margin: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+main .app-layout .background section .social-media .card-body a img {
+  width: 25%;
+}
+main .app-layout .background section .social-media .card-body a span {
+  color: black;
+  margin-left: 10px;
+  font-weight: 600;
+}
+main .app-layout .background section .social-media .card-body a p {
+  color: black;
+  margin: 5px 0;
+}
+main .app-layout footer {
+  margin: 2px 0 0;
+  padding: 10px 0;
+  text-align: center;
+  background: #fff;
+}
+main .app-layout footer p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  main .app-layout section .profil .card .img-fluid {
+    height: 50%;
+  }
+  main .app-layout section .profil .card .card-body p, main .app-layout section .profil .card .card-body a {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */
